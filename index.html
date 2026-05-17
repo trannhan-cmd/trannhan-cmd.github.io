@@ -1,10 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Web của Trần Nhân</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào Mừng</title>
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+        }
+
+        .container{
+            text-align:center;
+            width:80%;
+            max-width:900px;
+            animation: fadeIn 2s ease;
+        }
+
+        h1{
+            font-size:55px;
+            margin-bottom:30px;
+            letter-spacing:2px;
+            color: #00bfff;
+            animation: slideDown 2s ease;
+        }
+
+        .intro{
+            font-size:22px;
+            line-height:1.8;
+            background: rgba(255,255,255,0.1);
+            padding:25px;
+            border-radius:15px;
+            animation: fadeText 4s ease;
+        }
+
+        .highlight{
+            color:#00bfff;
+            font-weight:bold;
+        }
+
+        @keyframes slideDown{
+            from{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        @keyframes fadeText{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Xin chào 😎</h1>
-  <p>Đây là web của Trần Nhân!</p>
+
+    <div class="container">
+
+        <h1>CHÀO MỪNG BẠN ĐẾN VỚI TRANG WEB</h1>
+
+        <div class="intro">
+            Chào bạn, tôi là chủ trang web và tôi đang trong hành trình
+            trở thành nhà sáng tạo mẫu của CapCut.<br><br>
+
+            Các nền tảng mạng xã hội của tôi:<br><br>
+
+            <span class="highlight">TikTok:</span> trannhanmusic <br>
+            <span class="highlight">CapCut:</span> Trần Nhân <br>
+            <span class="highlight">ID CapCut:</span> 0905620789 <br><br>
+
+            Mong được các bạn ủng hộ video của tôi để tiếp thêm động lực cho tôi!
+        </div>
+
+    </div>
+
 </body>
 </html>
