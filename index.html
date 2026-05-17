@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE TRẦN NHÂN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-transform: uppercase; /* Tự động viết hoa toàn bộ */
+        }
 
+        body {
+            /* Sử dụng ảnh nền bạn đã gửi */
+            background: url('https://lh3.googleusercontent.com/d/1a676e.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        /* Lớp phủ tối để chữ dễ đọc hơn trên nền phức tạp */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 480px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(255, 0, 255, 0.3); /* Viền màu hồng tím nhẹ theo tone ảnh */
+            border-radius: 20px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 25px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+        }
+
+        .intro {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            margin: 20px 0;
+            color: #ff00ff;
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+
+        .social-box {
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.08);
+            margin-bottom: 15px;
+            padding: 12px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.03);
+            border-color: #ff00ff;
+        }
+
+        .item i {
+            font-size: 24px;
+            width: 40px;
+            color: #00f2ff; /* Màu xanh neon để tương phản */
+        }
+
+        .label {
+            font-size: 12px;
+            color: #00f2ff;
+            font-weight: bold;
+            display: block;
+        }
+
+        .value {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .footer-msg {
+            margin-top: 30px;
+            font-size: 13px;
+            line-height: 1.6;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        .heart {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ff00ff;
+            animation: beat 1.2s infinite;
+        }
+
+        @keyframes beat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WEBSITE TRẦN NHÂN</h1>
+
+        <div class="intro">
+            CHÀO BẠN, TÔI LÀ CHỦ TRANG WEB <br>
+            VÀ TÔI ĐANG TRONG HÀNH TRÌNH <br>
+            TRỞ THÀNH NHÀ SÁNG TẠO MẪU CỦA CAPCUT.
+        </div>
+
+        <div class="divider">✦ ✦ ✦</div>
+
+        <div class="social-box">
+            <div class="item">
+                <i class="fab fa-tiktok"></i>
+                <div>
+                    <span class="label">TIKTOK</span>
+                    <a href="https://www.tiktok.com/@trannhanmusic" class="value" target="_blank">TRANNHANMUSIC</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-video"></i>
+                <div>
+                    <span class="label">TÀI KHOẢN CAPCUT</span>
+                    <span class="value">TRẦN NHÂN</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-fingerprint"></i>
+                <div>
+                    <span class="label">ID CAPCUT</span>
+                    <span class="value">0905620789</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">✦ ✦ ✦</div>
+
+        <div class="footer-msg">
+            MONG ĐƯỢC CÁC BẠN ỦNG HỘ VIDEO CỦA TÔI <br>
+            ĐỂ TIẾP THÊM ĐỘNG LỰC CHO TÔI!
+        </div>
+
+        <div class="heart">
+            <i class="fas fa-heart"></i>
+        </div>
+    </div>
+
+</body>
+</html>
