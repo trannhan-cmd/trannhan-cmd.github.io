@@ -3,199 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>TRẦN NHÂN</title>
 
-<!-- ICON -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
+
 body{
-    margin:0;
-    padding:0;
-    font-family:Arial, sans-serif;
-    color:white;
-    overflow:hidden;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    text-transform:uppercase;
+margin:0;
+overflow:hidden;
+font-family:Arial;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-transform:uppercase;
 }
-/* VIDEO NỀN */
+
 #bg-video{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-2;
-    filter:brightness(40%);
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+filter:brightness(40%);
 }
-/* LỚP TỐI */
-.overlay{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.35);
-    z-index:-1;
+
+.box{
+background:rgba(0,0,0,0.45);
+padding:40px;
+border-radius:20px;
+width:80%;
+max-width:900px;
+text-align:center;
+backdrop-filter:blur(5px);
+border:2px solid rgba(0,191,255,0.5);
 }
-/* KHUNG CHÍNH */
-.container{
-    width:90%;
-    max-width:900px;
-    text-align:center;
-}
-/* TIÊU ĐỀ */
+
 h1{
-    font-size:70px;
-    color:#8be7ff;
-    margin-bottom:20px;
-    letter-spacing:3px;
-    text-shadow:
-        0 0 10px #00bfff,
-        0 0 25px #00bfff;
+font-size:60px;
+color:#7fe7ff;
 }
-/* ĐƯỜNG LINE */
-.line{
-    width:100%;
-    height:2px;
-    background:#00bfff;
-    margin:20px auto;
-    box-shadow:0 0 15px #00bfff;
+
+.text{
+font-size:28px;
+line-height:1.8;
 }
-/* KHUNG INFO */
-.info-box{
-    margin-top:35px;
-    background:rgba(0,0,0,0.35);
-    border:2px solid rgba(0,191,255,0.5);
-    border-radius:25px;
-    padding:45px;
-    backdrop-filter:blur(6px);
-    box-shadow:0 0 30px rgba(0,191,255,0.35);
-}
-/* ĐOẠN GIỚI THIỆU */
-.intro{
-    font-size:33px;
-    line-height:1.7;
-    font-weight:bold;
-}
-/* CHỮ XANH */
+
 .blue{
-    color:#00bfff;
+color:#00bfff;
+font-weight:bold;
 }
-/* SOCIAL */
-.social{
-    margin-top:45px;
-    text-align:left;
-    display:flex;
-    flex-direction:column;
-    gap:35px;
-}
-/* ITEM */
-.item{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    font-size:30px;
-    font-weight:bold;
-}
-/* ICON */
-.item i{
-    font-size:65px;
-    width:80px;
-    text-align:center;
-}
-/* LINK */
+
 a{
-    color:white;
-    text-decoration:none;
+color:#00bfff;
+text-decoration:none;
 }
-a:hover{
-    color:#00bfff;
-}
-/* TEXT CUỐI */
-.footer-text{
-    margin-top:55px;
-    font-size:30px;
-    line-height:1.7;
-    font-weight:bold;
-}
-/* ICON TIM */
-.heart{
-    margin-top:35px;
-    font-size:65px;
-    color:#00bfff;
-    text-shadow:0 0 20px #00bfff;
-}
-/* MOBILE */
-@media(max-width:768px){
-    h1{
-        font-size:40px;
-    }
-    .intro{
-        font-size:20px;
-    }
-    .item{
-        font-size:18px;
-    }
-    .item i{
-        font-size:45px;
-    }
-    .footer-text{
-        font-size:20px;
-    }
-}
+
 </style>
 </head>
 <body>
-<!-- VIDEO NỀN -->
+
 <video autoplay muted loop playsinline id="bg-video">
-    <source src="video.mp4" type="video/mp4">
+<source src="video.mp4" type="video/mp4">
 </video>
-<div class="overlay"></div>
-<div class="container">
-    <h1>CHÀO MỪNG BẠN ĐẾN VỚI TRANG WEB</h1>
-    <div class="line"></div>
-    <div class="info-box">
-        <div class="intro">
-            CHÀO BẠN, TÔI LÀ CHỦ TRANG WEB<br>
-            VÀ TÔI ĐANG TRONG HÀNH TRÌNH<br>
-            TRỞ THÀNH NHÀ SÁNG TẠO MẪU CỦA CAPCUT.
-        </div>
-        <div class="line" style="margin-top:40px;"></div>
-        <div class="intro" style="margin-top:35px;">
-            CÁC NỀN TẢNG MẠNG XÃ HỘI CỦA TÔI:
-        </div>
-        <div class="social">
-            <div class="item">
-                <i class="fa-brands fa-tiktok"></i>
-                <span class="blue">TIKTOK:</span>
-                <span>TRANNHANMUSIC</span>
-            </div>
-            <div class="item">
-                <i class="fa-solid fa-scissors"></i>
-                <span class="blue">CAPCUT:</span>
-                <a href="https://mobile.capcutshare.com/sv2/ZSxYPGw6F/" target="_blank">
-                    LINK CAPCUT
-                </a>
-            </div>
-            <div class="item">
-                <i class="fa-regular fa-id-card"></i>
-                <span class="blue">ID CAPCUT:</span>
-                <span>0905620789</span>
-            </div>
-        </div>
-        <div class="line" style="margin-top:45px;"></div>
-        <div class="footer-text">
-            MONG ĐƯỢC CÁC BẠN ỦNG HỘ VIDEO CỦA TÔI<br>
-            ĐỂ TIẾP THÊM ĐỘNG LỰC CHO TÔI!
-        </div>
-        <div class="heart">
-            <i class="fa-regular fa-heart"></i>
-        </div>
-    </div>
+
+<div class="box">
+
+<h1>CHÀO MỪNG BẠN ĐẾN VỚI TRANG WEB</h1>
+
+<div class="text">
+
+CHÀO BẠN, TÔI LÀ CHỦ TRANG WEB VÀ TÔI ĐANG TRONG HÀNH TRÌNH TRỞ THÀNH NHÀ SÁNG TẠO MẪU CỦA CAPCUT.
+
+<br><br>
+
+<span class="blue">TIKTOK:</span>
+TRANNHANMUSIC
+
+<br><br>
+
+<span class="blue">CAPCUT:</span>
+
+<a href="https://mobile.capcutshare.com/sv2/ZSxYPGw6F/" target="_blank">
+LINK CAPCUT
+</a>
+
+<br><br>
+
+<span class="blue">ID CAPCUT:</span>
+0905620789
+
 </div>
+
+</div>
+
 </body>
 </html>
