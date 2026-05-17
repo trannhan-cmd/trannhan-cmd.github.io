@@ -1,28 +1,151 @@
-<div class="intro">
-    CHÀO BẠN, TÔI LÀ CHỦ TRANG WEB VÀ TÔI ĐANG TRONG HÀNH TRÌNH TRỞ THÀNH NHÀ SÁNG TẠO MẪU CỦA CAPCUT.
-    
-    <br><br>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHÀO MỪNG</title>
 
-    CÁC NỀN TẢNG MẠNG XÃ HỘI CỦA TÔI:
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            overflow:hidden;
+            text-transform: uppercase;
+        }
 
-    <br><br>
+        /* VIDEO NỀN */
+        #bg-video{
+            position:fixed;
+            right:0;
+            bottom:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            z-index:-1;
+            filter: brightness(40%);
+        }
 
-    <span class="highlight">TIKTOK:</span>
-    TRANNHANMUSIC
+        .container{
+            text-align:center;
+            width:85%;
+            max-width:950px;
+            animation: fadeIn 2s ease;
+        }
 
-    <br><br>
+        h1{
+            font-size:65px;
+            margin-bottom:35px;
+            letter-spacing:3px;
+            color:#00bfff;
+            animation: slideDown 2s ease;
+            text-shadow:0 0 15px rgba(0,191,255,0.8);
+        }
 
-    <span class="highlight">CAPCUT:</span>
-    <a href="https://mobile.capcutshare.com/sv2/ZSxYPGw6F/" target="_blank">
-        LINK CAPCUT
-    </a>
+        .intro{
+            font-size:30px;
+            line-height:2;
+            background: rgba(0,0,0,0.45);
+            padding:35px;
+            border-radius:20px;
+            animation: fadeText 4s ease;
+            box-shadow:0 0 25px rgba(0,191,255,0.5);
+            backdrop-filter: blur(5px);
+        }
 
-    <br><br>
+        .highlight{
+            color:#00bfff;
+            font-weight:bold;
+        }
 
-    <span class="highlight">ID CAPCUT:</span>
-    0905620789
+        a{
+            color:#00bfff;
+            text-decoration:none;
+            font-weight:bold;
+        }
 
-    <br><br>
+        a:hover{
+            text-decoration:underline;
+        }
 
-    MONG ĐƯỢC CÁC BẠN ỦNG HỘ VIDEO CỦA TÔI ĐỂ TIẾP THÊM ĐỘNG LỰC CHO TÔI!
-</div>
+        @keyframes slideDown{
+            from{
+                transform:translateY(-100px);
+                opacity:0;
+            }
+            to{
+                transform:translateY(0);
+                opacity:1;
+            }
+        }
+
+        @keyframes fadeText{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+            }
+            to{
+                opacity:1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VIDEO NỀN -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="Quay màn hình 2026-05-17 172723.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+
+        <h1>CHÀO MỪNG BẠN ĐẾN VỚI TRANG WEB</h1>
+
+        <div class="intro">
+
+            CHÀO BẠN, TÔI LÀ CHỦ TRANG WEB VÀ TÔI ĐANG TRONG HÀNH TRÌNH TRỞ THÀNH NHÀ SÁNG TẠO MẪU CỦA CAPCUT.
+
+            <br><br>
+
+            CÁC NỀN TẢNG MẠNG XÃ HỘI CỦA TÔI:
+
+            <br><br>
+
+            <span class="highlight">TIKTOK:</span>
+            TRANNHANMUSIC
+
+            <br><br>
+
+            <span class="highlight">CAPCUT:</span>
+            <a href="https://mobile.capcutshare.com/sv2/ZSxYPGw6F/" target="_blank">
+                LINK CAPCUT
+            </a>
+
+            <br><br>
+
+            <span class="highlight">ID CAPCUT:</span>
+            0905620789
+
+            <br><br>
+
+            MONG ĐƯỢC CÁC BẠN ỦNG HỘ VIDEO CỦA TÔI ĐỂ TIẾP THÊM ĐỘNG LỰC CHO TÔI!
+
+        </div>
+
+    </div>
+
+</body>
+</html>
